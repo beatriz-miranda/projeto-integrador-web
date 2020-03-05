@@ -1,0 +1,12 @@
+# .gitignore
+
+# Ignore arquivos temporários gerados pelo MySQL Workbench
+bd/*.bak
+
+# Ignore arquivos automaticamente gerados por macOS
+.DS_Store
+
+# Ignore arquivos automaticamente gerados por Windows
+[Tt]humbs.db
+[Dd]esktop.ini
+*.lnk

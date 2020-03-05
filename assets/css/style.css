@@ -1,0 +1,112 @@
+/* style.css */
+
+/* PALETA DE CORES (/extras/Paleta De Cores.png)
+    TOM MAIS CLARO..... Branco: #FFF
+    |.................. Palha: #DFDDC7
+    |.................. Laranja: #F58B54
+    |.................. Abóbora: #A34A28
+    TOM MAIS ESCURO.... Marrom: #211717
+*/
+
+/* RESET ---> A FAZER!!! */
+
+/* TAGS */
+
+.navbar-color{
+    background-color:  #A34A28 !important;
+}
+
+footer {
+    background-color: #211717;
+    color: #DFDDC7;
+}
+
+/* IDS */
+
+#bg-sobre-nos {
+    background-color: #DFDDC7;
+}
+
+#icones-footer {
+    font-size: 24pt;
+}
+
+/* CLASSES */
+
+.btn-padrao {
+    background-color: #211717;
+    color: #DFDDC7;
+    border-radius: 0;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    width: 230px;
+}
+
+.btn-padrao i {
+    padding-left: 8px;
+}
+
+.btn-padrao:hover {
+    color: #F58B54;
+}
+
+.btn-padrao:focus {
+    box-shadow: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    .btn-padrao i {
+        padding-left: 0px;
+        height: 0;
+        width: 0;
+        opacity: 0;
+        transition-property: opacity, transform, padding;
+        transition-duration: 300ms;
+        transition-timing-function: ease-in-out;
+    }
+
+    .btn-padrao:hover i {
+        opacity: 1;
+        transform: translateX(-4px);
+        padding: 0 12px;
+    }
+
+}
+
+.cor-texto-padrao {
+    color: #211717;
+}
+
+@media screen and (min-width: 768px) {
+
+    .form-padrao {
+        padding: 0 24%;
+    }
+
+}
+
+.input-padrao {
+    background-color: #F58B54;
+    width: 100%;
+    padding: 5% 10%;
+    margin: 0;
+    border: 0;
+    color: #211717;
+    font-weight: bold;
+    text-transform: capitalize;
+    outline: none;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .input-padrao {
+        padding: 2% 4%;
+    }
+    
+}
+
+.input-padrao::placeholder {
+    color: #211717;
+    font-weight: bold;
+}
